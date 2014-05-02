@@ -8,6 +8,9 @@
     "type": "git",
     "url": "https://github.com/quartzjer/telehash-stream.git"
   },
+  "scripts": {
+         "test": "node tests/test.js"
+  },
   "keywords": [
     "telehash"
   ],
