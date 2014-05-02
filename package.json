@@ -3,8 +3,7 @@
   "version": "0.0.1",
   "description": "Adding stream support to telehash-js",
   "main": "index.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/quartzjer/telehash-stream.git"
@@ -21,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/quartzjer/telehash-stream/issues"
   },
-  "homepage": "https://github.com/quartzjer/telehash-stream"
+  "homepage": "https://github.com/quartzjer/telehash-stream",
+  "devDependencies": {
+    "tap": "^0.4.9",
+    "telehash-js": "^0.1.25"
+  }
 }
