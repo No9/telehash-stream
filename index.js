@@ -10,10 +10,6 @@ exports.install = function(self)
       if(this.streams[chan]) {
          return this.streams[chan];
       } else {
-      
-         self.listen(chan, function(err, packet, type) {
-         });
-      
          var stream = new Stream();
          stream.readable = stream.writeable = true;
       
@@ -27,8 +23,11 @@ exports.install = function(self)
 
          this.streams[chan] = stream;
          self.listen(chan, function(err, packet, type) {
+            stream.write(packet);
          });
-         
+         stream.end = function() {
+            //process.exit(0);
+         }
          return stream;
       }
    } 

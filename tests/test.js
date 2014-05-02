@@ -9,4 +9,5 @@ test('Sucessful init', function (t) {
    t.ok(self, 'Self is an object');
    var stm = self.stream('test');
    t.ok(stm, 'stream is an object');
+   stm.end();
 });
